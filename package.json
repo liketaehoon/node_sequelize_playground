@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/liketaehoon/node_sequelize_playground/issues"
   },
-  "homepage": "https://github.com/liketaehoon/node_sequelize_playground#readme"
+  "homepage": "https://github.com/liketaehoon/node_sequelize_playground#readme",
+  "dependencies": {
+    "mysql": "^2.13.0",
+    "mysql2": "^1.2.0",
+    "sequelize": "^3.30.4"
+  }
 }
