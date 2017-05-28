@@ -18,13 +18,20 @@ const User = sequelize.define('user', {
         type: Sequelize.DATE,
         field: 'REGDATE'
     },
+    updatedAt : {
+        type: Sequelize.DATE,
+        field : 'MODIFYDATE'
+    }
 }, {
-    tableName: 'tb_user'
+    timestamps: true,
+    freezeTableName: true,
+    tableName: 'tb_user',
+    paranoid: false, // don't delete set deleatedAt:
 });
 
 User
     .findOne()
     .then(user => {
-        console.log(user);
+        console.log(user.get('name'));
     });
 

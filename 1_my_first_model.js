@@ -22,7 +22,7 @@ const User = sequelize.define('user', {
 User.sync({force: true}).then(() => {
     return User.create({
         firstName: 'John',
-        lastNam: 'Hancock'
+        lastName: 'Hancock'
     });
 });
 
